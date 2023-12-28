@@ -15,13 +15,11 @@ provider "spotify" {
 }
 
 data "spotify_search_track" "by_artist" {
-  artist = "Dolly Parton"
-  #  album = "Jolene"
-  #  name  = "Early Morning Breeze"
+  artist = "The Rolling Stones"
 }
 
 resource "spotify_playlist" "playlist" {
-  name        = "Terraform Summer Playlist"
+  name        = "Terraform Betal's Playlist"
   description = "This playlist was created by Terraform"
   public      = true
 
